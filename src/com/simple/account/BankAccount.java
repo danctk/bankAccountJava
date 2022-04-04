@@ -1,7 +1,9 @@
 package com.simple.account;
 
-public class BankAccount {
+import java.io.Serializable;
 
+public class BankAccount implements Account, Serializable {
+    private static final int serialVersionUID = 1;
     private int accountID;
     private String ownerName;
     private float balance;
